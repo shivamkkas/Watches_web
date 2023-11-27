@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>FAQs</title>
+</head>
+<body class="c">
+    <div>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="images\logo-m.png"></a>
+            <h1 class="head">Accent Watch Company</h1>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <i class="fa fa-search"></i>
+                </li>
+                <li class="nav-item">
+                    <i class="fa fa-shopping-bag"></i>
+                </li>
+                <li class="nav-item">
+                    <i class="fa fa-user"></i>
+                </li>
+                <li class="nav-item">
+                    <i data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample" class="fa fa-shopping-cart"></i>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div style="font-size: 40px;">
+                    Login to Place order
+                </div>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="name">Number:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Address:</label>
+                    <input id="message" name="message" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <div>
+        <nav class="subnavbar">
+            <ul class="subnav-menu">
+                <li class="subnav-item">
+                    <a href="#" class="nav-link" onclick="homesection()">Home</a>
+                </li>
+                <li class="subnav-item">
+                    <a href="#" class="nav-link" onclick="aboutsection()">About</a>
+
+                </li>
+                <li class="subnav-item">
+                    <a href="#" class="nav-link" onclick="contactsection()">Contact</a>
+                </li>
+                <li class="subnav-item">
+                    <a href="#" class="nav-link" onclick="allwatchsection()">products</a>
+                </li>
+                <li class="subnav-item">
+                    <a href="#" class="nav-link" onclick="read()">FAQs</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="fqs">
+        <div>
+            <img src="images\bg5.webp" alt="" height="900" width="1480px"
+                style="margin-left: 10px;font-size: 30px;font-weight: 100;">
+            <h2 class="headf"style="text-align: center;">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer('answer1')">
+            <h2 class="question"><span>+</span> Do you offer Coupon Code</h2>
+            <p id="answer1" class="answer hidden">A: Yes we do.</p>
+           
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('answer2')">
+            <h2 class="question"><span>+</span> What type of watch movement is used in the watch?</h2>
+            <p id="answer2" class="answer hidden">A: We uses premium materials such as stainless steel, genuine leather,
+                and sapphire crystal in their watches. The watch cases are made of 316L stainless steel, which is
+                durable, corrosion-resistant, and hypoallergenic. The straps are made of genuine leather and are
+                available in a variety of colors and styles.
+                The crystals used on the face of the watches are made of scratch-resistant sapphire, which is known for
+                its durability and clarity.</p>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer('answer3')">
+            <h2 class="question"><span>+</span> Are prices shown in my local currency?</h2>
+            <p id="answer3" class="answer hidden">A: All products on Watches.com are priced in US Dollars ($ USD). Customers located outside of the United States will see a total amount charged on their bank statement in the default currency their bank deals in. The difference between USD order total and the amount charged on your bank statement is due to currency conversion from your financial institution..</p>
+           
+        </div>
+        <div class="faq-item" onclick="toggleAnswer('answer4')">
+            <h2 class="question"><span>+</span> Can I cancel my order?</h2>
+            <p id="answer4" class="answer hidden">A: Yes you can do.</p>
+           
+        </div>
+        <div class="faq-item" onclick="toggleAnswer('answer5')">
+            <h2 class="question"><span>+</span> Where is my order?</h2>
+            <p id="answer5" class="answer hidden">A: All orders are processed and shipped out by 5pm (PST) Monday through Friday. Orders received after 12pm (PST) will be processed the next business day.</p>
+           
+        </div>
+        
+        
+        
+    </div>
+    <section>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3" style="margin-left: -180px;">
+
+                        <!-- Content -->
+                        <h5 class="text-uppercase">Contact</h5>
+                        <p>Email: info@accentwatchco.com</p>
+                        <p>Accent@lovelywatches.com</p>
+                        <p>Phone: +44 7732 108850</p>
+
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-3 mb-md-0 mb-3" style="margin-left: -180px;">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase" style="line-height: 2em;">Follows on</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" style="color: white;">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">News</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase" >Company</h5>
+
+                        <ul class="list-unstyled" style="font-size: 25px;">
+                            <li>
+                                <i class="fa fa-youtube"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-facebook"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-twitter"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-instagram"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-linkedin"></i>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3" style="margin-left: -120px; line-height: 2em;">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase" style="line-height: 2em;">Support</h5>
+
+                        <ul class="list-unstyled" >
+                            <li>
+                                <a href="#!" style="color: white;" onclick="read()">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">Shipping</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">Track order</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+
+
+            <div class="footer-copyright text-center py-3">&copy; 2022 Accent Watch Company. All rights reserved.
+                <a href="/" style="color: white;"> Accent.com</a>
+            </div>
+
+        </footer>
+        <!-- Footer -->
+    </section>
+
+    <script src="motion.js"></script>
+
+
+
+    
+</body>
+</html>

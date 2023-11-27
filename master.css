@@ -1,0 +1,377 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+   background-color: black;
+   color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(59, 59, 242);
+    padding: 14px 24px;
+}
+
+.logo img {
+    color: #fff;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.head{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ddd
+}
+/* Add these styles to the existing CSS */
+
+/* Sub-Navbar */
+.subnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(88, 226, 250);
+    padding: 14px 24px;
+    text-align: center;
+}
+
+.subnav-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.subnav-item {
+    margin-left: 100px;
+    float: right;
+}
+
+.subnav-link {
+    color: #fff;
+    text-decoration: none;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img{
+    height: 500px;
+    width: 1534px;
+    margin-left: -268px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+.moye h2{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-box-reflect: below -50px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  padding: 20px;
+  font-size: 30px;
+  
+}
+.moye{
+  border-bottom: 2px solid;
+  padding: 5px;
+ 
+}
+.del{
+  color: #bbb;
+}
+#btn{
+  color: aliceblue;
+  background-color: blue;
+  padding: 15px;
+  width: 160px;
+  
+}
+
+#watches div img{
+  height: 250px;
+  width: 250px;
+  
+}
+#watches div{
+  float: left;
+  padding: 10px;
+  margin-left: 30px;
+
+}
+#watches::after{
+  display: flex;
+  content: "";
+  clear: both;
+  display: table;
+
+}
+#watches2{
+  margin-left:0px ;
+}
+#images{
+  padding: 50px 50px 50px;
+}
+/* about us section*/
+#textField{
+  background-color:#fcf1e2;
+}
+#textField video{
+  width:1500px;
+  height:800px;
+}
+.about1 img{
+  height:"900";
+  width:"1480px";
+  margin-left:10px;
+}
+#textField p{
+  padding:40px;
+  font-size: 25px;
+  font-weight: 200;
+}
+#textField h2{
+  text-align: center;
+  padding:20px;
+  font-size: 50px;
+  font-weight: 200;
+
+}
+.head1{
+  float: left;
+  margin-left: 150px;
+}
+.head2{
+  float: right;
+  margin-right: 150px;
+}
+.seller{
+  border-bottom: 2px solid;
+}
+.seller h2{
+  text-align: center;
+}
+.aboutimg1{
+  margin-left: 30px;
+  
+}
+#img1 img{
+  width: 740px;
+  height: 700px;
+
+}
+#img1 h1{
+  margin-left: 900px; 
+  margin-top: -600px; 
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+#img1 h2{
+  margin-left: 900px ;
+  margin-top: 0px;
+  font-size: 25px;
+  font-weight: 100
+}
+#img2 img{
+  width: 800px;
+  height: 700px;
+  margin-left: 740px;
+}
+#img2 h2{
+  margin-right: 900px ; 
+  margin-top:600px;
+  font-weight: 100; 
+  margin-left:40px
+}
+#img2 h3{
+  display: none;
+}
+#hello{
+  background-image: url('images\bg4.webp');
+}
+footer{
+  background: blue;
+  color: white;
+}
+/* product section*/
+#watchesall div{
+  float: left;
+  padding: 10px;
+  margin-left: 30px;
+}
+#watchesall::after{
+  display: flex;
+  content: "";
+  clear: both;
+  display: table;
+}
+.faq-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.question {
+  color: #333;
+  text-align: center;
+}
+
+.answer {
+  color: #666;
+  text-align: center;
+}
+
+.plus-sign {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+/*contact us*/
+.container1 {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+#get{
+  text-align: center;
+  padding: 20px;
+}

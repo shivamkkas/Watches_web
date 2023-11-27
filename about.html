@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>About</title>
+</head>
+
+<body class="about">
+    <div>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="logo-m.png"></a>
+            <h1 class="head">Accent Watch Company</h1>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <i class="fa fa-search"></i>
+                </li>
+                <li class="nav-item">
+                    <i class="fa fa-shopping-bag"></i>
+                </li>
+                <li class="nav-item">
+                    <i class="fa fa-user"></i>
+                </li>
+                <li class="nav-item">
+                    <i data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample" class="fa fa-shopping-cart"></i>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div style="font-size: 40px;">
+                    Login to Place order
+                </div>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="name">Number:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Address:</label>
+                    <input id="message" name="message" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <div>
+        <nav class="subnavbar">
+            <ul class="subnav-menu">
+                <li class="subnav-item">
+                    <a href="#" class="nav-link" onclick="homesection()">Home</a>
+                </li>
+                <li class="subnav-item">
+                    <a href="#" class="nav-link" onclick="aboutsection()">About</a>
+
+                </li>
+                <li class="subnav-item">
+                    <a href="#" class="nav-link" onclick="contactsection()">Contact</a>
+                </li>
+                <li class="subnav-item">
+                    <a href="#" class="nav-link" onclick="allwatchesection()">Products</a>
+                </li>
+                <li class="subnav-item">
+                    <a href="#" class="nav-link" onclick="read()">FAQs</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="textField">
+        <video controls autoplay>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <h2>About Us</h2>
+        <p>Welcome to Accent Watch Company, a brand meticulously crafted for those who seek not only a stylish
+            accessory
+            but a reliable companion for their daily practice. Our watches are more than timekeepers;
+            they're designed to enhance your routine, offering precision and functionality without compromising on
+            aesthetics.
+        </p>
+        <div class="about1">
+            <img src="bg1.webp" height="900" width="1480px" style="margin-left: 10px;">
+            <h2>The Artisan's Touch</h2>
+            <p>Every Accent timepiece begins as a blank canvas, waiting to be transformed into a masterpiece. Step
+                into
+                our atelier,
+                where skilled artisans meticulously breathe life into each watch. From the delicate strokes of the
+                designer's pen to
+                the precise movements of the watchmaker's hands, every detail is a testament to our commitment to
+                perfection.</p>
+
+
+        </div>
+        <div class="about2">
+            <img src="team.webp" class='aboutimg1'>
+            <img src="supp.webp" class='aboutimg'>
+        </div>
+        <div>
+            <span>
+                <h1 class="head1">MEET OUR TEAM</h1>
+            </span>
+            <span>
+                <h1 class="head2">CHARITIES WE SUPPORT</h1>
+            </span>
+        </div>
+        <div class="about3">
+            <img src="bg3.webp" alt="" height="700" width="1480px" style="margin-left: 10px;">
+            <h2> Inspired Designs</h2>
+            <p>Our watches draw inspiration from the world around us.
+                Explore the sources of our creativity, from the architectural
+                marvels that grace city skylines to the breathtaking wonders of
+                nature. Each design tells a unique story, a fusion of aesthetics and
+                functionality that captures the essence of time.
+            </p>
+        </div>
+        <div class="about3" >
+            <img src="bg2.webp" alt="" height="700" width="1480px" style="margin-left: 10px;">
+            <h2> Innovation Beyond Boundaries</h2>
+            <p>Accent Watches doesn't just keep time; it redefines it.
+                Dive into the cutting-edge technology that powers our timepieces,
+                from innovative materials to state-of-the-art movements.
+                Discover how we push the boundaries of what's possible,
+                ensuring that every second is not just measured but experienced.</p>
+        </div >
+        <div class="about3">
+            <img src="bg4.webp" alt="" height="700" width="1480px" style="position: static; margin-left: 10px;">
+            <h2>The Journey of a Collection</h2>
+            <p>Embark on a journey through our signature collections,
+                each a chapter in the story of Accent Watches.
+                From timeless classics that exude sophistication to bold,
+                contemporary designs that make a statement, find the perfect
+                timepiece to accompany you on your life's journey.
+
+            </p>
+        </div>
+        <div class="about4">
+            <h2>FIND THE WATCH FOR YOU</h2>
+            <span><img src="i.webp" alt="" height="300" width="300"></span>
+            <span><img src="j.webp" alt="" height="300" width="300"></span>
+            <span><img src="m.webp" alt="" height="300" width="300"></span>
+            <span><img src="n.webp" alt="" height="300" width="300"></span>
+            <span><img src="o.webp" alt="" height="300" width="300"></span>
+        </div>
+        <div>
+            <h2><button style="background-color: blue;color: white;padding: 10px; width: 200px;">View All</button>
+            </h2>
+        </div>
+
+    </div>
+
+    <section>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3" style="margin-left: -180px;">
+
+                        <!-- Content -->
+                        <h5 class="text-uppercase">Contact</h5>
+                        <p>Email: info@accentwatchco.com</p>
+                        <p>Accent@lovelywatches.com</p>
+                        <p>Phone: +44 7732 108850</p>
+
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-3 mb-md-0 mb-3" style="margin-left: -180px;">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase" style="line-height: 2em;">Follows on</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" style="color: white;">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">News</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase" >Company</h5>
+
+                        <ul class="list-unstyled" style="font-size: 25px;">
+                            <li>
+                                <i class="fa fa-youtube"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-facebook"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-twitter"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-instagram"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-linkedin"></i>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3" style="margin-left: -120px; line-height: 2em;">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase" style="line-height: 2em;">Support</h5>
+
+                        <ul class="list-unstyled" >
+                            <li>
+                                <a href="#!" style="color: white;" onclick="read()">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">Shipping</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: white;">Track order</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+
+
+            <div class="footer-copyright text-center py-3">&copy; 2022 Accent Watch Company. All rights reserved.
+                <a href="/" style="color: white;"> Accent.com</a>
+            </div>
+
+        </footer>
+        <!-- Footer -->
+    </section>
+
+    <script src="motion.js"></script>
+
+
+</body>
+
+</html>
